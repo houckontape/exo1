@@ -1,0 +1,84 @@
+/*parametrage du body conteneur flex avec direction column*/
+body{
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*boite de navigation en haut de pages*/
+/*todo: rajouter les icone de navigation */
+.navigation {
+  width: 100%;
+  height: 100px;
+  background-color: purple;
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-end;
+}
+/*mise à l echelle du logo*/
+.logo{
+  width:250px;
+  height:100%;
+}
+/*mise en couleur des nav et changement couleur au passage souris*/
+
+/*mise a l echelle du boutton de connection*/
+.conec{
+  color : white;
+  background-color: purple;
+  height: 40px;
+}
+/*boite de presentation du produits phare*/
+/*---- */
+.prophare{
+  width: 100%;
+  height: 300px;
+  border: solid 1px black;
+  background:center/contain no-repeat url("IMG/voyage_tunisie.png"),
+              150% url("IMG/voyage_tunisie.png");
+}
+/*boite contenant le filtre*/
+.filtre{
+    background-color: white;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.chercher{
+  background-color: blue;
+}
+/*boite contenant les  boites produits*/
+.produit{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+
+}
+/*mise à l 'echelle des boites produits'*/
+.prod1{
+  background-color:white;
+  width: 600PX;
+  height: 400PX;
+
+}
+.prod2{
+  background-color:white;
+  width: 600PX;
+  height: 400PX;
+}
+.prod3{
+  background-color:white;
+  width: 600PX;
+  height: 400PX;
+}
+.prod4{
+  background-color:white;
+  width: 600PX;
+  height: 400PX;
+}
+
+div
+{
+  border:2px solid black;
+}
