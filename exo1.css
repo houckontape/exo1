@@ -1,4 +1,5 @@
 /*parametrage du body conteneur flex avec direction column*/
+/*amiolré la position des box espacé un peu evité le collage des boites*/
 body{
   background-color: grey;
   display: flex;
@@ -6,7 +7,7 @@ body{
   align-items: center;
 }
 /*boite de navigation en haut de pages*/
-/*todo: rajouter les icone de navigation */
+/*todo: rajouter les icone de navigationtravaillé les borders avec rayon */
 .navigation {
   width: 100%;
   height: 100px;
@@ -22,13 +23,17 @@ body{
 }
 /*mise en couleur des nav et changement couleur au passage souris*/
 
-/*mise a l echelle du boutton de connection*/
+/*mise a l echelle du boutton de connection */
+/*todo:travaillé les border et couleur*/
 .conec{
   color : white;
   background-color: purple;
   height: 40px;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 /*boite de presentation du produits phare*/
+/*todo:flou image arriere plan*/
 /*---- */
 .prophare{
   width: 100%;
@@ -38,6 +43,7 @@ body{
               150% url("IMG/voyage_tunisie.png");
 }
 /*boite contenant le filtre*/
+/*todo: travaille border*/
 .filtre{
     background-color: white;
     width: 70%;
@@ -48,37 +54,35 @@ body{
 .chercher{
   background-color: blue;
 }
+.pub{
+  margin: 10px;
+}
 /*boite contenant les  boites produits*/
+/*gere les 4 boites produits en meme temps*/
 .produit{
   display:flex;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content:center;
+}
+/*passe les 4 boite en flex et permet */
+div article {
+  background-color: white;
+  border:solid 1px black;
+  border-radius: 5px;
+  margin: 10px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+article header {
+  font-size: 2em;
 
 }
-/*mise à l 'echelle des boites produits'*/
-.prod1{
-  background-color:white;
-  width: 600PX;
-  height: 400PX;
 
-}
-.prod2{
-  background-color:white;
-  width: 600PX;
-  height: 400PX;
-}
-.prod3{
-  background-color:white;
-  width: 600PX;
-  height: 400PX;
-}
-.prod4{
-  background-color:white;
-  width: 600PX;
-  height: 400PX;
-}
-
-div
-{
-  border:2px solid black;
+article button{
+  background-color: orange;
+  color:white;
+  text-shadow: 5px 4px 4px;
+  width:50%;
+  margin-left: 25%;
 }
